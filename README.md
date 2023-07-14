@@ -15,7 +15,7 @@ The AI model uses PyTorch, a cool deep learning framework I learned. It uses som
 
 ## Usage
 
-Use the gui5(ard_beta).py, then you can try the power of this AI
+Use the gui3.py, then you can try the power of this AI
 
 # Warning
 
