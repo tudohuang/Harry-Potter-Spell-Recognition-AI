@@ -14,7 +14,7 @@ import serial
 import time
 import serial.tools.list_ports
 
-
+model_path = input("Please enter the path to your model file: ")
 # 等待連接建立
 time.sleep(2)
 
@@ -133,10 +133,7 @@ class CNN(nn.Module):
 
 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-#model = torch.load("C:/Gdrive_tudo/code/Spell AI/spell_ai0.pt")
-model = torch.load("C:/Gdrive_tudo/code/project/Spell AI/spell_ai6.pt", map_location=torch.device('cpu'))
-#model = torch.load("C:/Gdrive_tudo/code/project/Spell AI/davinci.pt", map_location=torch.device('cpu'))
+model = torch.load(model_path, map_location=torch.device('cpu'))
 
 model.eval()
 print(type(model))
