@@ -13,6 +13,14 @@ I make a PyTorch AI model that can recognize their spells. Here are the spells m
 
 The AI model uses PyTorch, a cool deep learning framework I learned. It uses something called a Convolutional Neural Network (CNN) to learn and recognize the spell shapes.
 
+## Usage
+
+Use the gui5(ard_beta).py, then you can try the power of this AI
+
+# Warning
+
+Be sure to type the correct path of the model when the computer ask your path
+
 ## Training the Model
 
 I trained the model on a bunch of spell images that I labeled myself. The dataset has lots of examples of each spell, with different handwriting styles and variations. The better and more diverse the training data, the smarter the model becomes!
