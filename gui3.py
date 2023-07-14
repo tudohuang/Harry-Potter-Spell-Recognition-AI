@@ -15,23 +15,10 @@ def softmax(x):
     e_x = np.exp(x - np.max(x))
     return e_x / np.sum(e_x)
 
+
+model_path = input("Please enter the path to your model file: ")
+model_path = model_path.replace("/", "//")
 #pt 前就要有CNN
-"""def predict_digit(img):
-    im_d = torch.from_numpy(im[None, ...][None, ...]).to(device).float()/255
-    #resize image to 28x28 pixels
-    img = img.resize((28,28))
-    #convert rgb to grayscale
-    img = img.convert('L')
-    img = np.array(img)
-    img = img.reshape(1,28,28,1)
-    img = img/255.0
-    img = 1 - img
-    #predicting
-    output_d = model(im_d)
-    return np.argmax(output_d), max(output_d) """
-
-
-
 def predict(im):
     im = im.resize((28,28))
     #convert rgb to grayscale
@@ -104,8 +91,7 @@ class CNN(nn.Module):
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-#model = torch.load("C:/Gdrive_tudo/code/Spell AI/spell_ai0.pt")
-model = torch.load("C:/Users/tudoh/我的雲端硬碟/code/project/Spell AI/spell_ai6.pt", map_location=torch.device('cpu'))
+model = torch.load(model_path, map_location=torch.device('cpu'))
 
 model.eval()
 print(type(model))
