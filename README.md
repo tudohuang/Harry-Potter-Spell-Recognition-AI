@@ -13,6 +13,7 @@ I make a PyTorch AI model that can recognize their spells. Here are the spells m
 
 The AI model uses PyTorch, a cool deep learning framework I learned. It uses something called a Convolutional Neural Network (CNN) to learn and recognize the spell shapes.
 
+![Converter](https://github.com/tudohuang/Harry-Potter-Spell-Recognition-AI/blob/main/2023-08-04%2017-30-03%20(online-video-cutter.com).gif)
 ## Usage
 
 Use the gui3.py, then you can try the power of this AI
