@@ -1,6 +1,5 @@
 # My Harry Potter Spell Recognizer with PyTorch
 
-![](https://github.com/tudohuang/Harry-Potter-Spell-Recognition-AI/blob/main/IMG_4068.PNG)
 I make a PyTorch AI model that can recognize their spells. Here are the spells my model can recognize based on the shapes you draw:
 
 - 'Incendio': 🔺 (Like a triangle)
