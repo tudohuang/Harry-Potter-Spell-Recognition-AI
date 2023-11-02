@@ -178,4 +178,4 @@ class App(tk.Tk):
 
 app = App()
 app.mainloop()
-#https://drive.google.com/file/d/1-Dg-DahqW5aaeL-Lrjf11cGy4JUFiOaL/view?usp=drive_link
+
